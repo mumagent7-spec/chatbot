@@ -5,7 +5,7 @@ metadata:
   description: ${{ values.description }}
   annotations:
     backstage.io/techdocs-ref: dir:.
-    github.com/project-slug: ${{ values.repoUrl.split('/')[-2] }}/${{ values.repoUrl.split('/')[-1] }}
+    github.com/project-slug: ${{ parseRepoUrl(values.repoUrl).owner }}/${{ parseRepoUrl(values.repoUrl).repo }}
 spec:
   type: service
   lifecycle: experimental
