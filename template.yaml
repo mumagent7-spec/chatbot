@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: llm-insurance-chatbot
-  title: LLM Insurance Chatbot
-  description: Creates an LLM-based insurance chatbot using Groq and Streamlit.
+  name: llm-chatbot
+  title: LLM Chatbot
+  description: Creates an LLM-based chatbot using Groq and Streamlit.
   tags:
     - llm
     - chatbot

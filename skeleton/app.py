@@ -24,7 +24,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = [
         {
             "role": "system",
-            "content": "You are a helpful assistant for an insurance company. You should be friendly, professional, and provide clear and concise answers to questions about insurance policies, claims, and general inquiries. Do not provide financial advice."
+            "content": "You are a helpful general-purpose assistant. You should be friendly, professional, and provide clear and concise answers to questions."
         }
     ]
 
