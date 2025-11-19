@@ -52,11 +52,12 @@ spec:
 
     - title: Repository Information
       required:
-        - repoUrl
+        - destination
       properties:
-        repoUrl:
+        destination:
+          title: Destination
           type: string
-          title: Repository URL
+          description: The repository where the code will be stored.
           ui:field: RepoUrlPicker
           ui:options:
             allowedHosts:
@@ -72,7 +73,7 @@ spec:
           name: ${{ parameters.component_id }}
           description: ${{ parameters.description }}
           owner: ${{ parameters.owner }}
-          repoUrl: ${{ parameters.repoUrl }}
+          destination: ${{ parameters.destination }}
           groqApiKey: ${{ parameters.groqApiKey }}
 
     - id: publish
@@ -80,7 +81,7 @@ spec:
       action: publish:github
       input:
         description: 'This is ${{ parameters.description }}'
-        repoUrl: ${{ parameters.repoUrl }}
+        repoUrl: ${{ parameters.destination }}
 
     - id: register
       name: Register
