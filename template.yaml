@@ -79,7 +79,6 @@ spec:
       name: Publish to GitHub
       action: publish:github
       input:
-        allowedHosts: ['github.com']
         description: 'This is ${{ parameters.description }}'
         repoUrl: ${{ parameters.repoUrl }}
 
